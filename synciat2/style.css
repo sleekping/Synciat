@@ -13,26 +13,19 @@ body {
 
 
 header {
-  
   background-color: #707d82 ;    ;
   padding: 20px 20px ;
   font-weight: 300;
   text-decoration: solid;
-   
-
-
 }
-
 nav li { 
-    justify-content: space-evenly;
-    
+    /* justify-content: space-evenly; */
     text-decoration: none;
     font-weight: 300;
     position: relative;
     display: inline-block;
     float: left;
-   text-align: center;
-  
+   /* text-align: center; */
 }
     
 
@@ -40,15 +33,12 @@ nav a {
   position: relative;
   z-index: 500;
   color: #2d2c2c;
-  background: #C88066;
   text-decoration: none;
   display: block;
-  /* padding: 1.3em; */
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
   transition: all 0.2s ease;
   padding: 14px 16px;
   justify-content: center;
@@ -59,38 +49,24 @@ nav a i[class*=caret] {
  
 }
 nav a:hover {
-  color: #707D82;
-
-  
-  
+  color: #707D82; 
 }
 nav a:hover + .submenu {
   opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
   visibility: visible;
 }
 nav .eiob .submenu {
-  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.2s linear;
-  -moz-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.2s linear;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.2s linear;
 }
 nav .ln .submenu {
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 nav .ei .submenu {
-  -webkit-transition: all 0.3s ease-in, opacity 0.2s linear;
-  -moz-transition: all 0.3s ease-in, opacity 0.2s linear;
+  
   transition: all 0.3s ease-in, opacity 0.2s linear;
 }
 nav .eo .submenu {
-  -webkit-transition: all 0.3s ease-out, opacity 0.2s linear;
-  -moz-transition: all 0.3s ease-out, opacity 0.2s linear;
   transition: all 0.3s ease-out, opacity 0.2s linear;
 }
 nav .submenu {
@@ -102,21 +78,9 @@ nav .submenu {
   width: 14em;
   top: 100%;
   left: 0;
-  
-
   box-shadow: 0 2px 5px rgba(68, 68, 68, 0.3);
-  -webkit-transform-origin: top center;
-  -moz-transform-origin: top center;
-  -ms-transform-origin: top center;
-  -o-transform-origin: top center;
   transform-origin: top center;
-  -webkit-transform: rotateX(-90deg);
-  -moz-transform: rotateX(-90deg);
-  -ms-transform: rotateX(-90deg);
-  -o-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 nav .submenu li > .submenu {
@@ -127,10 +91,6 @@ nav .submenu li > .submenu {
 }
 nav .submenu:hover {
   opacity: 1;
-  -webkit-transform: rotateX(0deg);
-  -moz-transform: rotateX(0deg);
-  -ms-transform: rotateX(0deg);
-  -o-transform: rotateX(0deg);
   transform: rotateX(0deg);
   visibility: visible;
   display: block;
@@ -140,47 +100,39 @@ nav .submenu li {
   float: none;
   display: block;
   overflow:visible;
- 
-  
 }
 nav .submenu a {
-  width: 80%;
   display: block;
   font-weight: 200;
   text-transform: none;
-
 }
 nav .submenu a:hover {
   color: #f5f5f5;
   background: #707d82;
-  min-width: 160px;
   border: none;
-  overflow: hidden;
+  /* overflow: hidden;
   outline: none;
-  
+   */
 }
 
 
 
-ul{ text-decoration: none;
+ul{ 
+  text-decoration: none;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  height: 46px;
+  /* height: 46px; */
   background-color:#C88066;
   padding: 20px 50px;
   text-align: justify;
   margin: 0;
-  position: absolute;
+  position: relative;
   text-align: center;
   transition-duration: .25s;
   outline: none;
-
+width: 100%;
   border: none;
-
-  
-  
-
 } 
 #sign { 
         display: block;
