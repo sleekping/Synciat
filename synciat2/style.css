@@ -1,9 +1,9 @@
 @charset "UTF-8";
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-} 
+}
 body {
   font-family: "serif";
   font-variant: 16px;
@@ -11,23 +11,29 @@ body {
   background: #f0f0f0;
 }
 
+html {
+  font-size: 62.2%;
+}
+
+section {
+  padding: 2rem 9%;
+}
 
 header {
-  background-color: #707d82 ;    ;
-  padding: 20px 20px ;
+  background-color: #707d82;
+  padding: 20px 20px;
   font-weight: 300;
   text-decoration: solid;
 }
-nav li { 
-    /* justify-content: space-evenly; */
-    text-decoration: none;
-    font-weight: 300;
-    position: relative;
-    display: inline-block;
-    float: left;
-   /* text-align: center; */
+nav li {
+  /* justify-content: space-evenly; */
+  text-decoration: none;
+  font-weight: 300;
+  position: relative;
+  display: inline-block;
+  float: left;
+  /* text-align: center; */
 }
-    
 
 nav a {
   position: relative;
@@ -43,13 +49,12 @@ nav a {
   padding: 14px 16px;
   justify-content: center;
 }
-nav a i[class*=caret] {
-  color: #BFB6B2;
+nav a i[class*="caret"] {
+  color: #bfb6b2;
   margin-left: 0.15em;
- 
 }
 nav a:hover {
-  color: #707D82; 
+  color: #707d82;
 }
 nav a:hover + .submenu {
   opacity: 1;
@@ -57,13 +62,13 @@ nav a:hover + .submenu {
   visibility: visible;
 }
 nav .eiob .submenu {
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.2s linear;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    opacity 0.2s linear;
 }
 nav .ln .submenu {
   transition: all 0.3s linear;
 }
 nav .ei .submenu {
-  
   transition: all 0.3s ease-in, opacity 0.2s linear;
 }
 nav .eo .submenu {
@@ -87,19 +92,17 @@ nav .submenu li > .submenu {
   top: 0;
   left: 80%;
   border: none;
-  
 }
 nav .submenu:hover {
   opacity: 1;
   transform: rotateX(0deg);
   visibility: visible;
   display: block;
-  
 }
 nav .submenu li {
   float: none;
   display: block;
-  overflow:visible;
+  overflow: visible;
 }
 nav .submenu a {
   display: block;
@@ -115,34 +118,189 @@ nav .submenu a:hover {
    */
 }
 
-
-
-ul{ 
+ul {
   text-decoration: none;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   /* height: 46px; */
-  background-color:#C88066;
+  background-color: #c88066;
   padding: 20px 50px;
   text-align: justify;
   margin: 0;
   position: relative;
   text-align: center;
-  transition-duration: .25s;
+  transition-duration: 0.25s;
   outline: none;
-width: 100%;
+  width: 100%;
   border: none;
-} 
-#sign { 
-        display: block;
-        text-transform: none;
-       justify-content:space-between;
-       font-family: FreeMono, monospace;
-       margin-top: -20px;
-       word-spacing: -7px; 
-       line-height: 0.1;
-       
-     
-      
+}
+#sign {
+  display: block;
+  text-transform: none;
+  justify-content: space-between;
+  font-family: FreeMono, monospace;
+  margin-top: -20px;
+  word-spacing: -7px;
+  line-height: 0.1;
+}
+
+.hero-section {
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-attachment: fixed;
+  position: relative;
+  background-color: #f5f5f5;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.hero-section .over {
+  background: #e2e4e7a8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.hero-section .content h3 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+.hero-section .content {
+  isolation: isolate;
+  width: 75%;
+}
+
+.hero-section .content h1 {
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+  padding-block: 12px 7px;
+  color: #1d1a1a;
+}
+
+.hero-section .content h1 > span {
+  color: #d77c62;
+}
+
+.hero-section .content p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding-block: 5px 40px;
+}
+
+.hero-section .content a {
+  padding: 13px 26px;
+  background: #d77c62;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  border-radius: 24px;
+}
+
+.hero-section .content a:hover {
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  section {
+    padding: 2rem 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .hero-section {
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: left;
+    background-attachment: fixed;
+    position: relative;
+  }
+
+  .hero-section .content {
+    margin: 0 auto;
+    text-align: start;
+  }
+
+  .hero-section .content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .hero-section .content h3 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+
+  .hero-section .content p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding-block: 5px 25px;
+  }
+
+  .hero-section .content a {
+    padding: 10px 20px;
+    background: #d77c62;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    text-align: start;
+  }
+}
+
+@media (max-width: 425px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .hero-section {
+    background-position: left;
+  }
+
+  .hero-section .content {
+    margin: 0 auto;
+    text-align: start;
+  }
+
+  .hero-section .content h1 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    font-weight: 800;
+    padding-block: 12px 4px;
+    color: #1d1a1a;
+  }
+
+  .hero-section .content p {
+    font-size: 1.5rem;
+    padding-block: 7px 27px;
+  }
 }
