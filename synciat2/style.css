@@ -23,36 +23,46 @@ section {
 }
 
 header {
-  background-color:#707d82;
-  padding: 20px;
-  text-align: center;
-  justify-content: space-between;
+  background-color:#707d82; 
+  color: #f0f0f0;
+  justify-content:space-around;
+  padding-left: 20em;
+ 
 
 }
 
-#header1 h1{
-  background-color: #707d82;
+header > h1#header1 p {
   
   font-weight:300;
   text-decoration: solid;  
   display: flex;
   position: relative;
-  gap: 30px;
+  gap: 20px;
   justify-content:space-around;
   color: #f0f0f0;
   font-size: large;
+  margin: 0;
+  
+
+}
+.subtext {
+  font-size: 17px; /* Adjust this value for the subtext font size */
+  margin-top: 2px;
+  
+
 }
 
 
 /*SECTION EMAILBOX*/
  #email{ width: 370px;
+  
 
 
  }
     #email-form {
-    width: 350px;
-    padding: 10px 30px;
-    margin: 0 auto;
+  
+  
+    padding: 8px;
     background: #707d82;
     position: relative;
     display: flex;
@@ -61,12 +71,8 @@ header {
     
     gap: 10px;
     margin-right: 60px;
+
     }
-    .subtext {
-      font-size: 17px; /* Adjust this value for the subtext font size */
-      margin-top: 2px;
-   
-  }
   #my-btn {
       background-color:#0a5dbd ;
       color: white;
@@ -75,10 +81,7 @@ header {
     min-height: 40px;
     position: relative;
     margin-right: 1cm;
-    
-  
-    
-      border-color: 707d82;
+    border-color: #707d82;
     border-radius: 10px;
     box-shadow:3px 3px #d77c62 ;
   }
@@ -89,6 +92,13 @@ header {
   }
   #my-btn:active { 
     background-color:#d77c62;
+  }
+
+  input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    font-family: Verdana, sans-serif;
+    
   }
 nav li {
   /* justify-content: space-evenly; */
