@@ -5,14 +5,17 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "lato";
-  font-variant: 16px;
+  font-family: Verdana, sans-serif;
+  font-variant: 18px;
   font-weight: 300;
   background: #f0f0f0;
+
+  
 }
 
 html {
-  font-size: 62.2%;
+  font-size: 80.2%;
+
 }
 
 section {
@@ -20,11 +23,73 @@ section {
 }
 
 header {
-  background-color: #707d82;
-  padding: 20px 20px;
-  font-weight: 300;
-  text-decoration: solid;
+  background-color:#707d82;
+  padding: 20px;
+  text-align: center;
+  justify-content: space-between;
+
 }
+
+#header1 h1{
+  background-color: #707d82;
+  
+  font-weight:300;
+  text-decoration: solid;  
+  display: flex;
+  position: relative;
+  gap: 30px;
+  justify-content:space-around;
+  color: #f0f0f0;
+  font-size: large;
+}
+
+
+/*SECTION EMAILBOX*/
+ #email{ width: 370px;
+
+
+ }
+    #email-form {
+    width: 350px;
+    padding: 10px 30px;
+    margin: 0 auto;
+    background: #707d82;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 50px;
+    
+    gap: 10px;
+    margin-right: 60px;
+    }
+    .subtext {
+      font-size: 17px; /* Adjust this value for the subtext font size */
+      margin-top: 2px;
+   
+  }
+  #my-btn {
+      background-color:#0a5dbd ;
+      color: white;
+    padding:5px 15px ;
+    min-width:120px;
+    min-height: 40px;
+    position: relative;
+    margin-right: 1cm;
+    
+  
+    
+      border-color: 707d82;
+    border-radius: 10px;
+    box-shadow:3px 3px #d77c62 ;
+  }
+  #my-btn:hover  {
+    background-color: #79b2f4 ;
+    transition:0.5s ;
+  
+  }
+  #my-btn:active { 
+    background-color:#d77c62;
+  }
 nav li {
   /* justify-content: space-evenly; */
   text-decoration: none;
@@ -135,11 +200,11 @@ ul {
   width: 100%;
   border: none;
 }
-#sign {
+#sign-in {
   display: block;
   text-transform: none;
   justify-content: space-between;
-  font-family: FreeMono, monospace;
+  font-family: Verdana, sans-serif;;
   margin-top: -20px;
   word-spacing: -7px;
   line-height: 0.1;
