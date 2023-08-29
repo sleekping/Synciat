@@ -7,18 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/66df598fd1.js" crossorigin="anonymous"></script>
-  <script src="function.js"></script>
+ 	<script type="text/javascript" src="function.js"></script>
   <title>Synciat</title>
 </head>
 
 <body>
 
   <!-- <content wrapper> -->
-  <center>
-    <header> Get Up To 20% off For New Users When You Purchase Any Of Our Devices !</header>
-  </center>
+  
+    <header id="header1"><h1> Get Up To 20% Discount </h1>
+      <p class="subtext"> For New Users When You Purchase Any Of Our Devices !</p>
+    <form id="email-form" onclick="submitForm();">
+  
+ 
+      <input type="email" id="email" placeholder="Enter your email " size="40" required />
+      
+      <br><br>
+      <button type="submit" id="my-btn">Get Offer</button>
+     </form>
+    </header> 
+  
   <nav>
-    <!-- <ul id="main-menu">
+     <ul id="main-menu">
 
       <li>
         <a href="#"><i class="fa fa-home"></i> LOGO </a>
@@ -50,10 +60,10 @@
 
           </li>
         </ul>
- -->
+ 
 
         <!-- First menu catigory  -->
-<!-- 
+
       <li>
         <a href="#0">Car External Devices <i class="fa fa-caret-right"></i></a>
         <ul class="submenu">
@@ -63,10 +73,10 @@
           <li><a href="#0">Remote Start System </a></li>
 
         </ul>
-      </li> -->
+      </li>
       <!-- 2nd menu catigory  -->
 
-      <!-- <li>
+      <li>
         <a href="#0"><i class="fa-solid fa-sensor-fire fa-beat-fade"></i>Sensors <i class="fa fa-caret-right"></i></a>
         <ul class="submenu">
           <li><a href="#0">Home Automatic Sensors</a></li>
@@ -76,15 +86,15 @@
         </ul>
       </li>
 
-      <li> -->
+      <li> 
         <!-- 3rd menu catigory -->
-<!-- 
+
         <a href="#0"><i class="fa-solid fa-camera-security fa-beat"></i>Alarms</a>
       </li>
     </ul>
-    </li> -->
+    </li> 
 
-    <!-- <li>
+     <li>
       <a href="#"><i class="fa fa-briefcase"></i> Service<i class="fa fa-caret-down"></i> </a>
       <ul class="submenu">
         <li><a href="#0">Repairs & Installation</a></li>
@@ -99,14 +109,14 @@
       <a href="#"><i class="fa fa-comment"></i>Contact</a>
 
     </li>
-    <li id="sign">
+    <li id="sign-in">
 
       <a href="#">Log in</a>
       <a href="#"> Shop Now</a>
     </li>
     </ul>
 
- -->
+ 
 
   </nav>
 
@@ -130,10 +140,68 @@
 
   </section>
 
+<br><br>
 
 
-
-
+  <main>
+	<div class="footer">
+	  <div class="bubbles">
+		<!-- Small numbers looks nice too -->
+		<!-- Generate bubbles dynamically using JavaScript -->
+		<!-- This part should be handled in JavaScript -->
+	  </div>
+	  <div class="content">
+		<div>
+		  <div>
+			<b>Eldew</b>
+			<a href="#">Secuce</a>
+			<a href="#">Drupand</a>
+			<a href="#">Oceash</a>
+			<a href="#">Ugefe</a>
+			<a href="#">Babed</a>
+		  </div>
+		  <div>
+			<b>Spotha</b>
+			<a href="#">Miskasa</a>
+			<a href="#">Agithe</a>
+			<a href="#">Scesha</a>
+			<a href="#">Lulle</a>
+		  </div>
+		  <div>
+			<b>Chashakib</b>
+			<a href="#">Chogauw</a>
+			<a href="#">Phachuled</a>
+			<a href="#">Tiebeft</a>
+			<a href="#">Ocid</a>
+			<a href="#">Izom</a>
+			<a href="#">Ort</a>
+		  </div>
+		  <div>
+			<b>Athod</b>
+			<a href="#">Pamuz</a>
+			<a href="#">Vapert</a>
+			<a href="#">Neesk</a>
+			<a href="#">Omemanen</a>
+		  </div>
+		</div>
+		<div>
+		  <a class="image" href="#" target="_blank" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg')"></a>
+		  <p>©2019 Not Really</p>
+		</div>
+	  </div>
+	</div>
+	<svg style="position: fixed; top: 100vh">
+	  <defs>
+		<filter id="blob">
+		  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+		  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+		  <!-- feComposite(in="SourceGraphic" in2="blob" operator="atop") -->
+		  <!-- After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect -->
+		</filter>
+	  </defs>
+	</svg>
+  </main>
+<script src="function.js"></script>
 </body>
 
 </html>
