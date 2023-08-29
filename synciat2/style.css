@@ -148,7 +148,11 @@ ul {
 .hero-section {
   padding: 2rem 5% !important;
   height: 80vh;
-  background-image: linear-gradient(to left , rgba(0, 0, 0, 0.2),  rgb(167, 161, 161)),
+  background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.2),
+      rgb(167, 161, 161)
+    ),
     url(img/pexels-anastasiya-gepp-3995921.jpg);
   background-position: center;
   background-size: cover;
@@ -158,61 +162,30 @@ ul {
 .hero {
   display: flex;
   align-items: center;
-  /* justify-content: start;
-   */
 }
 
 .hero-section div {
   flex-basis: 50%;
 }
 
-
-.hero-section .text-content {
-  isolation: isolate;
-}
-
-/* .hero .card-content{
-    display: flex;
-    align-items: baseline;
-    gap: 3rem;
-}
-
-.hero .card-content .image-card img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top-left-radius:20px ;
-  border-bottom-left-radius:20px ;
-} */
-
 .hero .card-content {
-  display: grid;
-  gap: 12.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px , 1fr));
-  transform: translateX(7%)  translateY(45%);
+  display: flex;
   align-items: baseline;
-}
-
-.hero .card-content .image-card{
-   padding: 9px ;
-}
-
-
-
-.hero .card-content .image-card img {
- 
-    width: max-content;
- 
-}
-
-.hero .card-content .image-card img.img-1{
-  border-top-left-radius: 70px;  
-}
-.hero .card-content .image-card img.img-2{
-  border-top-right-radius: 70px;  
   width: 100%;
- 
-  box-shadow: 7px 10px 1px 0px rgba(233, 118, 92, 0.877);
+  gap: 1rem;
+  transform: translateX(4%) translateY(30%);
+}
+
+.hero .card-content img.img-1 {
+  width: 45%;
+  border-top-left-radius: 20px !important;
+  border-radius: 7px;
+}
+
+.hero .card-content img.img-2 {
+  width: 40%;
+  border-top-right-radius: 12px !important;
+  border-radius: 7px;
 }
 
 .hero-section .text-content h1 {
@@ -268,7 +241,7 @@ ul {
 
 @media (max-width: 768px) {
   section {
-    padding: 2rem ;
+    padding: 2rem;
   }
 
   .hero-section {
@@ -281,23 +254,18 @@ ul {
 
   .hero-section .text-content {
     text-align: start;
-    width: 100%;
   }
-
-
 
   .hero-section .text-content h1 {
     font-size: 4.4rem;
     letter-spacing: 1px;
-    line-height: 1.5;
-    padding-block: 0 20px;
   }
 
   .hero-section .text-content p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.7;
     letter-spacing: 1.3px;
-    padding-block: 5px 30px;
+    padding-block: 5px 25px;
   }
 
   .hero-section .text-content button {
@@ -312,7 +280,33 @@ ul {
     text-align: start;
   }
   .hero-section div {
-    flex-basis: 75%;
+    flex-basis: 100%;
+  }
+
+  .hero .card-content {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    gap: 1.1rem;
+    transform: translateY(100%) translateX(-25%);
+  }
+
+  .hero .card-content img {
+    width: 53%;
+  }
+
+  .hero .card-content img.img-1 {
+    border-top-left-radius: 30px;
+  }
+
+  .hero .card-content img.img-2 {
+    border-top-right-radius: 30px;
+  }
+}
+
+@media (max-width: 749px) {
+  .hero .card-content {
+    display: none;
   }
 }
 
@@ -331,15 +325,10 @@ ul {
     text-align: start;
   }
 
-
   .hero-section .text-content h1 {
     font-size: 3.5rem;
     letter-spacing: 1px;
     font-weight: 800;
-    padding-block: 12px 30px;
-  }
-
-  .hero-section .text-content p {
-      display: none;
+    padding-block: 12px 10px;
   }
 }
