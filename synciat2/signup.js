@@ -1,8 +1,8 @@
 const signUpButton = document.getElementById("signUp");
 const signInButton = document.getElementById('signIn');
-const container = document.querySelectorAll('.container');
-const form = document.querySelectorAll(".form-container");
-const overlay = document.querySelectorAll(".overlay-container");
+const container = document.querySelector('.container');
+const form = document.querySelector(".form-container");
+const overlay = document.querySelector(".overlay-container");
 
 
 // Function to handle the sign-up button click event
@@ -10,7 +10,8 @@ function signMeButton() {
     // Add event listener to the sign-up button
     signUpButton.addEventListener('click', function() {
       container.classList.add('right-panel-active');
-      console.log(Signupbuttonclicked.classList);
+
+      // console.log(Signupbuttonclicked);
       // You can include further actions here after the class is added
     });
   }
