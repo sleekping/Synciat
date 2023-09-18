@@ -5,17 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signup page</title>
-    <link rel="stylesheet" href="signup.css">
-   <!-- <script type="text/javascript" src="js/signup.js"></script>  -->
-    <style>
-
-
-
-    </style>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="function.js"> </script>  
 </head>
 
-
 <body>
+        
+    <nav>
+                      <ul id="main-menu">
+
+                <li>
+       <a href="#"><i class="fa fa-home"></i> LOGO </a>
+     </li>
+
+
+
+     <li>
+       <a href="#"><i class="fa fa-user"></i> Product <i class="fa fa-caret-down"></i></a>
+       <ul class="submenu">
+         <li><a href="product.html"><i class="fa-regular fa-lightbulb-gear fa-shake"></i>Home Automation Accessories<i
+               class="fa fa-caret-right"></i></a>
+           <ul class="submenu">
+             <li><a href="product.html">Lightings & Appliances Control </a>
+             </li>
+             <li>
+
+               <a href="#0">Smart Locks</a>
+             </li>
+             <li>
+               <a href="#0">Security Cameras </a>
+             </li>
+             <li>
+               <a href="#0">Smart Irrigation Controllers </a>
+             </li>
+             <li>
+               <a href="#0">Door & Gate Opener System </a>
+             </li>
+
+         </li>
+       </ul>
+
+
+       <!-- First menu catigory  -->
+
+     <li>
+       <a href="#0">Car External Devices <i class="fa fa-caret-right"></i></a>
+       <ul class="submenu">
+         <li><a href="#0">GPS Trackers</a></li>
+         <li><a href="#0">Car Alarms</a></li>
+         <li><a href="#0">Car Camera</a></li>
+         <li><a href="#0">Remote Start System </a></li>
+
+       </ul>
+     </li>
+     <!-- 2nd menu catigory  -->
+
+     <li>
+       <a href="#0"><i class="fa-solid fa-sensor-fire fa-beat-fade"></i>Sensors <i class="fa fa-caret-right"></i></a>
+       <ul class="submenu">
+         <li><a href="#0">Home Automatic Sensors</a></li>
+         <li><a href="#0">Smoke Detectors </a></li>
+         <li><a href="#0">Temperature Sensors</a></li>
+
+       </ul>
+     </li>
+
+     <li> 
+       <!-- 3rd menu catigory -->
+
+       <a href="#0"><i class="fa-solid fa-camera-security fa-beat"></i>Alarms</a>
+     </li>
+   </ul>
+   </li> 
+
+    <li>
+     <a href="#"><i class="fa fa-briefcase"></i> Service<i class="fa fa-caret-down"></i> </a>
+     <ul class="submenu">
+       <li><a href="#0">Repairs & Installation</a></li>
+     </ul>
+
+   <li>
+     <a href="#">
+       <span>ProtectPlan</span>
+     </a>
+   </li>
+   <li>
+     <a href="#"><i class="fa fa-comment"></i>Contact</a>
+
+   </li>
+   <li id="sign-in">
+
+     <a href="#">Log in</a>
+     <a href="#"> Shop Now</a>
+   </li>
+   </ul>
+
+
+
+ </nav>
+
+
     <div class="container" id="container">
 
         <div class="form-container sign-up-container">
@@ -63,7 +153,7 @@
                     <button class="ghost" id="signIn">Sign In</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h1>H+ello, Friend!</h1>
+                    <h1>Hello, Friend!</h1>
                     <p>Enter your personal details and start journey with us</p>
                     <button class="ghost" id="signUp" onclick="signMeButton()">Sign Up</button>
                 </div>
@@ -71,23 +161,6 @@
         </div>
 
     </div>
-
-    <!-- <div class="form-container sign-up-container">
-    </div>
-
-
-
-    <div class="sign-in-container">
-    </div>
-
-
-
-
-    <div class="overlay-container">
-    </div>
-
-
- -->
 
 
 
@@ -101,57 +174,7 @@
     <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 
-<!-- 
+    <script type="text/javascript" src="function.js"></script>
 
-
-<h2>Weekly Coding Challenge #1: Sign in/up Form</h2>
-<div class="container" id="container">
-	<div class="form-container sign-up-container">
-		<form action="#">
-			<h1>Create Account</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your email for registration</span>
-			<input type="text" placeholder="Name" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<button>Sign Up</button>
-		</form>
-	</div>
-	<div class="form-container sign-in-container">
-		<form action="#">
-			<h1>Sign in</h1>
-			<div class="social-container">
-				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>
-			<span>or use your account</span>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Password" />
-			<a href="#">Forgot your password?</a>
-			<button>Sign In</button>
-		</form>
-	</div>
-	<div class="overlay-container">
-		<div class="overlay">
-			<div class="overlay-panel overlay-left">
-				<h1>Welcome Back!</h1>
-				<p>To keep connected with us please login with your personal info</p>
-				<button class="ghost" id="signIn">Sign In</button>
-			</div>
-			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
-				<p>Enter your personal details and start journey with us</p>
-				<button class="ghost" id="signUp">Sign Up</button>
-			</div>
-		</div>
-	</div>
-</div> -->
-
- <script src="signup.js"></script>
 </body>
 </html>
