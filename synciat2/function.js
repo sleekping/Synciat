@@ -30,7 +30,7 @@ function signMeButton() {
     signUpButton.addEventListener('click', function() {
       container.classList.add('right-panel-active');
 
-      // console.log(Signupbuttonclicked);
+      // console.log(Signup button clicked);
       // You can include further actions here after the class is added
     });
   }
@@ -54,24 +54,24 @@ function signMeButton() {
 
 
   // Function to generate bubbles dynamically on footer
-  // function generateBubbles() {
-  //   var bubble = document.createElement('div');
+  function generateBubbles() {
+    var bubble = document.createElement('div');
 
-  //   for (let i = 0; i < 128; i++) {
-  //     var bubble = create('dev');
-  //     bubble.classList.add('bubble');
+    for (let i = 0; i < 128; i++) {
+      var bubble = create('dev');
+      bubble.classList.add('bubble');
 
-  //     var size = 2 + Math.random() * 4;
-  //     var distance = 6 + Math.random() * 4;
-  //     var position = -5 + Math.random() * 110;
-  //     var time = 2 + Math.random() * 2;
-  //     var delay = -1 * (2 + Math.random() * 2);
+      var size = 2 + Math.random() * 4;
+      var distance = 6 + Math.random() * 4;
+      var position = -5 + Math.random() * 110;
+      var time = 2 + Math.random() * 2;
+      var delay = -1 * (2 + Math.random() * 2);
 
-  //     bubble.style.setProperty('--size', `${size}rem`);
-  //     bubble.style.setProperty('--distance', `${distance}rem`);
-  //     bubble.style.setProperty('--position', `${position}%`);
-  //     bubble.style.setProperty('--time', `${time}s`);
-  //     bubble.style.setProperty('--delay', `${delay}s`);
+      bubble.style.setProperty('--size', `${size}rem`);
+      bubble.style.setProperty('--distance', `${distance}rem`);
+      bubble.style.setProperty('--position', `${position}%`);
+      bubble.style.setProperty('--time', `${time}s`);
+      bubble.style.setProperty('--delay', `${delay}s`);
 
       bubblesContainer.appendChild(bubble);
     }
