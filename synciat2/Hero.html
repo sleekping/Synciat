@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
   <script src="https://kit.fontawesome.com/66df598fd1.js" crossorigin="anonymous"></script>
  	<script type="text/javascript" src="function.js"></script>
   <title>Synciat</title>
@@ -141,66 +143,108 @@
   </section>
 
 <br><br>
+<br><br><br>
 
 
-  <main>
-	<div class="footer">
-	  <div class="bubbles">
-		<!-- Small numbers looks nice too -->
-		<!-- Generate bubbles dynamically using JavaScript -->
-		<!-- This part should be handled in JavaScript -->
-	  </div>
-	  <div class="content">
-		<div>
-		  <div>
-			<b>Eldew</b>
-			<a href="#">Secuce</a>
-			<a href="#">Drupand</a>
-			<a href="#">Oceash</a>
-			<a href="#">Ugefe</a>
-			<a href="#">Babed</a>
-		  </div>
-		  <div>
-			<b>Spotha</b>
-			<a href="#">Miskasa</a>
-			<a href="#">Agithe</a>
-			<a href="#">Scesha</a>
-			<a href="#">Lulle</a>
-		  </div>
-		  <div>
-			<b>Chashakib</b>
-			<a href="#">Chogauw</a>
-			<a href="#">Phachuled</a>
-			<a href="#">Tiebeft</a>
-			<a href="#">Ocid</a>
-			<a href="#">Izom</a>
-			<a href="#">Ort</a>
-		  </div>
-		  <div>
-			<b>Athod</b>
-			<a href="#">Pamuz</a>
-			<a href="#">Vapert</a>
-			<a href="#">Neesk</a>
-			<a href="#">Omemanen</a>
-		  </div>
-		</div>
-		<div>
-		  <a class="image" href="#" target="_blank" style="background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/199011/happy.svg')"></a>
-		  <p>©2019 Not Really</p>
-		</div>
-	  </div>
-	</div>
-	<svg style="position: fixed; top: 100vh">
-	  <defs>
-		<filter id="blob">
-		  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-		  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
-		  <!-- feComposite(in="SourceGraphic" in2="blob" operator="atop") -->
-		  <!-- After reviewing this after years I can't remember why I added this but it isn't necessary for the blob effect -->
-		</filter>
-	  </defs>
-	</svg>
-  </main>
+                                                  <!-- footer starts from here -->
+
+
+<footer class="footer-section">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>1010 Avenue, sw 54321, chandigarh</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span> +234 7041875512</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>opsyadek812@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+            
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                   <a href="https://www.linkedin.com/in/adekola-opeyemi-31783a239"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-threads"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+             
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul class="footer-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+               
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+                  <button><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2023, All Right Reserved <a href="#"> &copy Synciiat</a></p>
+            </div>
+      </div>
+    </div>
+  </footer>
+
 <script src="function.js"></script>
 </body>
 
