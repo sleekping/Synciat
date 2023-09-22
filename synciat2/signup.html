@@ -225,25 +225,35 @@ input {
   transform: translateX(20%);
 }
 
-
+/* 
 @media (width <= 991px) {
   .container~div:not(.sign-in-container){
       display: flex;
       flex-direction: column;
   }
-}
+} */
 /*end sign up css*/
 
+/*span edit */
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+
+}
 
     </style>
 </head>
 
 <body>
         
-    <nav>
-                      <ul id="main-menu">
+ 
+  <nav>
+    <ul id="main-menu">
 
-                <li>
+     <li>
        <a href="#"><i class="fa fa-home"></i> LOGO </a>
      </li>
 
@@ -275,7 +285,7 @@ input {
        </ul>
 
 
-       <!-- First menu category  -->
+       <!-- First menu catigory  -->
 
      <li>
        <a href="#0">Car External Devices <i class="fa fa-caret-right"></i></a>
@@ -287,7 +297,7 @@ input {
 
        </ul>
      </li>
-     <!-- 2nd menu category  -->
+     <!-- 2nd menu catigory  -->
 
      <li>
        <a href="#0"><i class="fa-solid fa-sensor-fire fa-beat-fade"></i>Sensors <i class="fa fa-caret-right"></i></a>
@@ -300,7 +310,7 @@ input {
      </li>
 
      <li> 
-       <!-- 3rd menu category -->
+       <!-- 3rd menu catigory -->
 
        <a href="#0"><i class="fa-solid fa-camera-security fa-beat"></i>Alarms</a>
      </li>
@@ -314,7 +324,7 @@ input {
      </ul>
 
    <li>
-     <a href="#">
+     <a href="#"><i class="fa-solid fa-shield"></i>
        <span>ProtectPlan</span>
      </a>
    </li>
@@ -324,11 +334,12 @@ input {
    </li>
    <li id="sign-in">
 
-     <a href="#">Log in</a>
-     <a href="#"> Shop Now</a>
-   </li>
-   </ul>
+     
 
+       <button class="button1"><a href="#"></a><i class="fa-solid fa-user"></i> Log in</a></button>
+       <button class="button2"><a href="#"><i class="fa-solid fa-cart-shopping"></i> shop</a></button>
+     </li>
+     </ul>
 
 
  </nav>
@@ -391,6 +402,7 @@ input {
         </div>
 
     </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
@@ -400,7 +412,7 @@ input {
 
 
 <footer class="footer-section">
-  <div class="container">
+  <div class="container1">
     <div class="footer-cta pt-5 pb-5">
       <div class="row">
         <div class="col-xl-4 col-md-4 mb-30">
@@ -439,10 +451,10 @@ input {
           
             <div class="footer-social-icon">
               <span>Follow us</span>
-                 <a href="https://www.linkedin.com/in/adekola-opeyemi-31783a239"><i class="fa-brands fa-linkedin"></i></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-threads"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="https://www.linkedin.com/in/adekola-opeyemi-31783a239"><i class="fa-brands fa-linkedin linkedln-bg"></i></i></a>
+              <a href="#"><i class="fa-brands fa-instagram instagram-bg"></i></a>
+              <a href="#"><i class="fa-brands fa-threads threads-bg"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter twitter-bg "></i></a>
            
             </div>
           </div>
@@ -474,7 +486,7 @@ input {
               <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
             </div>
             <div class="subscribe-form">
-              <form action="#">
+              <form action="#" >
                 <input type="text" placeholder="Email Address">
                 <button><i class="fa-solid fa-paper-plane"></i></button>
               </form>
@@ -484,7 +496,7 @@ input {
       </div>
     </div>
   </div>
-  <div class="copyright-area">
+   <!-- <div class="copyright-area">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 col-lg-6 text-center text-lg-left">
@@ -493,6 +505,8 @@ input {
           </div>
     </div>
   </div>
+  </div>
+  </div>  -->
 </footer>
    
 
