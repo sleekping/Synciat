@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup page</title>
+    <!-- <link rel="stylesheet" href="signup.css"> -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/66df598fd1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="function.js"> </script>  
+    <style>
+      /*nav bar starts*/
+
+
+      
+
+
+      /*nav bar ends  */
+
+
+/*sign up css*/
+
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+span {
+  font-size: 12px;
+}
+
+a {
+  color: #333;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #d77c62;
+  background-color: #d77c62;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+}
+
+form {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.social-c
+
+.social-container a {
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+.container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* max-width: 100%; */
+  min-height: 480px;
+  
+}
+.form-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+
+.sign-in-container {
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.sign-up-container {
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.right-panel-active .sign-in-container {
+  transform: translateX(100%);
+}
+
+.container.right-panel-active .sign-up-container {
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: show 0.6s;
+}
+
+@keyframes show {
+  0%,
+  49.99% {
+      opacity: 0;
+      z-index: 1;
+  }
+
+  50%,
+  100% {
+      opacity: 1;
+      z-index: 5;
+  }
+}
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.6s ease-in-out;
+  z-index: 100;
+}
+
+.container.right-panel-active .overlay-container {
+  transform: translateX(-100%);
+}
+
+.overlay {
+  background: #707d82;
+  background: -webkit-linear-gradient(to right, #d77c62, #707d82);
+  background: linear-gradient(to right, #d77c62, #707d82);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  color: #ffffff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.container.right-panel-active .overlay {
+  transform: translateX(50%);
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.6s ease-in-out;
+}
+
+.overlay-left {
+  transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay-left {
+  transform: translateX(0);
+}
+
+.overlay-right {
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.right-panel-active .overlay-right {
+  transform: translateX(20%);
+}
+
+/* 
+@media (width <= 991px) {
+  .container~div:not(.sign-in-container){
+      display: flex;
+      flex-direction: column;
+  }
+} */
+/*end sign up css*/
+
+/*span edit */
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+
+}
+
+    </style>
+</head>
+
+<body>
+        
+ 
+  <nav>
+    <ul id="main-menu">
+
+     <li>
+       <a href="Hero.html"><i class="fa fa-home"></i> LOGO </a>
+     </li>
+
+
+
+     <li>
+       <a href="#"><i class="fa fa-user"></i> Product <i class="fa fa-caret-down"></i></a>
+       <ul class="submenu">
+         <li><a href="product.html"><i class="fa-regular fa-lightbulb-gear fa-shake"></i>Home Automation Accessories<i
+               class="fa fa-caret-right"></i></a>
+           <ul class="submenu">
+             <li><a href="product.html">Lightings & Appliances Control </a>
+             </li>
+             <li>
+
+               <a href="#0">Smart Locks</a>
+             </li>
+             <li>
+               <a href="#0">Security Cameras </a>
+             </li>
+             <li>
+               <a href="#0">Smart Irrigation Controllers </a>
+             </li>
+             <li>
+               <a href="#0">Door & Gate Opener System </a>
+             </li>
+
+         </li>
+       </ul>
+
+
+       <!-- First menu catigory  -->
+
+     <li>
+       <a href="#0">Car External Devices <i class="fa fa-caret-right"></i></a>
+       <ul class="submenu">
+         <li><a href="#0">GPS Trackers</a></li>
+         <li><a href="#0">Car Alarms</a></li>
+         <li><a href="#0">Car Camera</a></li>
+         <li><a href="#0">Remote Start System </a></li>
+
+       </ul>
+     </li>
+     <!-- 2nd menu catigory  -->
+
+     <li>
+       <a href="#0"><i class="fa-solid fa-sensor-fire fa-beat-fade"></i>Sensors <i class="fa fa-caret-right"></i></a>
+       <ul class="submenu">
+         <li><a href="#0">Home Automatic Sensors</a></li>
+         <li><a href="#0">Smoke Detectors </a></li>
+         <li><a href="#0">Temperature Sensors</a></li>
+
+       </ul>
+     </li>
+
+     <li> 
+       <!-- 3rd menu catigory -->
+
+       <a href="#0"><i class="fa-solid fa-camera-security fa-beat"></i>Alarms</a>
+     </li>
+   </ul>
+   </li> 
+
+    <li>
+     <a href="#"><i class="fa fa-briefcase"></i> Service<i class="fa fa-caret-down"></i> </a>
+     <ul class="submenu">
+       <li><a href="#0">Repairs & Installation</a></li>
+     </ul>
+
+   <li>
+     <a href="#"><i class="fa-solid fa-shield"></i>
+       <span>ProtectPlan</span>
+     </a>
+   </li>
+   <li>
+     <a href="#"><i class="fa fa-comment"></i>Contact</a>
+
+   </li>
+   <li id="sign-in">
+
+     
+
+       <button class="button1"><a href="/synciat2/signup.html"></a><i class="fa-solid fa-user"></i> Log in</a></button>
+       <button class="button2"><a href="/synciat2/product.html"><i class="fa-solid fa-cart-shopping"></i> shop</a></button>
+     </li>
+     </ul>
+
+
+ </nav>
+
+
+ <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-up-container">
+            <!-- Sign Up form code goes here -->
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registration</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button >sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign in</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                <span>Follow us</span>
+                    <a href="https://www.linkedin.com/in/adekola-opeyemi-31783a239" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your account</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button>
+            </form>
+            <!-- Sign In form code goes here -->
+        </div>
+
+        <div class="overlay-container">
+            <!-- The overlay code goes here -->
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>
+                        To keep connected with us please login with your personal info
+                    </p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp" onclick="signMeButton()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+   
+    
+                                                  <!-- footer starts from here -->
+
+
+<footer class="footer-section">
+  <div class="container1">
+    <div class="footer-cta pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="cta-text">
+              <h4>Find us</h4>
+              <span>1010 Avenue, sw 54321, chandigarh</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="fas fa-phone"></i>
+            <div class="cta-text">
+              <h4>Call us</h4>
+              <span> +234 7041875512</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-md-4 mb-30">
+          <div class="single-cta">
+            <i class="far fa-envelope-open"></i>
+            <div class="cta-text">
+              <h4>Mail us</h4>
+              <span>opsyadek812@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-content pt-5 pb-5">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 mb-50">
+          <div class="footer-widget">
+          
+            <div class="footer-social-icon">
+              <span>Follow us</span>
+                 <a href="https://www.linkedin.com/in/adekola-opeyemi-31783a239"><i class="fa-brands fa-linkedin linkedln-bg"></i></i></a>
+              <a href="#"><i class="fa-brands fa-instagram instagram-bg"></i></a>
+              <a href="#"><i class="fa-brands fa-threads threads-bg"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter twitter-bg "></i></a>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Useful Links</h3>
+            </div>
+            <ul class="footer-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Our Services</a></li>
+              <li><a href="#">Expert Team</a></li>
+              <li><a href="#">Contact us</a></li>
+             
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+          <div class="footer-widget">
+            <div class="footer-widget-heading">
+              <h3>Subscribe</h3>
+            </div>
+            <div class="footer-text mb-25">
+              <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+            </div>
+            <div class="subscribe-form">
+              <form action="#" >
+                <input type="text" placeholder="Email Address">
+                <button><i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- <div class="copyright-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+          <div class="copyright-text">
+            <p>Copyright &copy; 2023, All Right Reserved <a href="#"> &copy Synciiat</a></p>
+          </div>
+    </div>
+  </div>
+  </div>
+  </div>  -->
+</footer>
+   
+
+
+    <script >
+
+
+
+    
+    
+    const signUpButton = document.getElementById("signUp");
+    const signInButton = document.getElementById('signIn');
+    const container = document.querySelector('.container');
+    const form = document.querySelector(".form-container");
+    const overlay = document.querySelector(".overlay-container");
+    
+    
+    function signMeButton() {
+        // Add event listener to the sign-up button
+        signUpButton.addEventListener('click', function() {
+          container.classList.add('right-panel-active');
+          
+          // You can include further actions here after the class is added
+        });
+      }
+      
+      // Add event listener to the sign-in button
+      signInButton.addEventListener('click', function() {
+        container.classList.remove('right-panel-active');
+      });
+      
+      // Add event listener to the form submission
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        // You can include further actions here after the form is submitted
+      });
+      
+      // You mentioned an 'activateOverlay()' function here, but it's not defined in the provided code snippet.
+      // You might want to define and call it as needed.
+      
+      // Call the function to handle the sign-up button click event
+      signMeButton();
+</script>
+
+</body>
+</html>
