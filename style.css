@@ -10,7 +10,7 @@ body {
   grid-template-rows: 1fr 10rem auto;
   grid-template-areas: "main" "." "footer"; 
   overflow-x: hidden;
-  background: #F5F7FA;
+  /* background: #F5F7FA; */
   min-height: 100vh;
   font-family: "verdana", sans-serif;
 }
@@ -54,7 +54,123 @@ header > h1#header1 p {
 
 }
 
+#productSection{
+  padding: 2rem 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+#productSection h1{
+  text-align: center;
+  color: #d77c62 !important;
+}
+#productSection .productsectionContainer .buttons {
+display: flex;
+width: 100%;
+gap:1rem;
+padding: 1.6rem 0;
+justify-content: center;
 
+}
+#productSection .productsectionContainer .buttons .filter_btn {
+  padding: .5rem 2rem;
+  border-radius: .3rem;
+  border: 1px solid #d77c62;
+  background: transparent;
+  color:#d77c62;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+#productSection .productsectionContainer .buttons .filter_btn.active {
+  color: white;
+  background-color:#d77c62;
+}
+#productSection .productsectionContainer .buttons .filter_btn:hover{
+  color: white;
+  background-color:#d77c62;
+}
+#productSection .productsectionContainer .productContainer{
+  display: flex;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  gap:  1rem;
+  
+}
+#productSection .productsectionContainer .productContainer .product{
+  /* background: rgb(245, 247, 250); */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.171);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow-x: hidden;
+  position: relative;
+}
+#productSection .productsectionContainer .productContainer .product .details{
+  padding: .5rem 0 1.5rem;
+}
+#productSection .productsectionContainer .productContainer .product .details p:nth-child(1){
+font-size: 1.7rem;
+/* padding-bottom: 0.5rem; */
+}
+#productSection .productsectionContainer .productContainer .product .details p:nth-child(2){
+font-size: 1.5rem;
+  color: #d77c62 !important;
+}
+#productSection .productsectionContainer .productContainer .product .image img{
+  height: 23rem;
+  padding:.5rem;
+  width: 21rem;
+  
+}
+#productSection .productsectionContainer .productContainer .product .details button{
+  /* padding: .5rem 2rem; */
+  border-radius: .3rem;
+  border: 1px solid #d77c62;
+  background: transparent;
+  color:#d77c62;
+  cursor: pointer;
+  transition: all 1s ease;
+  /* margin-top: .5rem; */
+}
+#productSection .productsectionContainer .productContainer .product .details button:hover{
+  color: white;
+  background-color:#d77c62;
+}
+.myIcons{
+ 
+  font-size: 1.9rem;
+   line-height: 3rem !important;
+    position: absolute;
+    width: 3rem;
+    text-align: center;
+    border-radius: 100%;
+    top: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background: rgb(51, 51, 51,.8);
+  transition: all 1s ease;
+}
+#productSection .productsectionContainer .productContainer .product:hover .myIcons.myIcon1{
+left: 1rem;
+}
+#productSection .productsectionContainer .productContainer .product:hover .myIcons.myIcon2{
+ 
+right: 1rem;
+}
+.myIcons:hover{
+  background: #d77c62;
+  transition: all 1s ease;
+}
+.myIcons.myIcon1{
+  left: -4rem;
+}
+
+.myIcons.myIcon2{
+  right: -4rem;
+}
 /*SECTION EMAIL BOX*/
  #email{ width: 370px;
   
